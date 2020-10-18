@@ -1,0 +1,183 @@
+@import "./vars";
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, rgba(19, 19, 23, 0.6), rgba(65, 66, 99, 0.015)), url("../images/background.png");
+  background-position: top;
+}
+
+
+.nav-bar {
+
+  &__body {
+
+    // background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: #E7E7F2;
+    }
+
+  }
+
+  &__part {
+    list-style-type: none;
+  }
+
+  &__link {
+
+    color: white;
+    font-family: $font;
+    font-size: 1.125rem;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    &_logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    &_space-after {
+      margin-right: 3.75rem;
+    }
+
+    &_big-space-after {
+      margin-right: 5rem;
+    }
+
+  }
+
+}
+
+
+.content {
+
+  margin-top: 13.0625rem;
+  width: 87.5%;
+  margin-left: 12.5%;
+  display: flex;
+  justify-content: space-between;
+
+  
+
+  &__header {
+    width: 860px;
+  }
+
+  &__title {
+    margin-top: 3.1rem;
+    margin-bottom: 3.75rem;
+    line-height: 1.1em;
+    color: white;
+    font-family: $font;
+    font-size: 6rem;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    line-height: 1.5em;
+    color: white;
+    font-family: $font;
+    font-size: 1.75rem;
+    opacity: 0.8;
+  }
+
+}
+
+
+.offer {
+
+  height: 400px;
+  width: 570px;
+  // padding-left: 2.25rem;
+  // box-sizing: border-box;
+  // padding-top: 3rem;
+  display: flex;
+  justify-content: start;
+  background-color: #979797;
+  background-color: rgba(255, 255, 255, 0.15);
+  // opacity: 15%;
+  border-radius: 15px 0 0 15px;
+
+  &__info {
+    height: 400px;
+    width: 300px;
+    box-sizing: border-box;
+    padding-left: 2.25rem;
+    padding-top: 3rem;
+  }
+
+  &__superscript {
+    margin-bottom: 3rem;
+    color: white;
+    font-family: $font;
+    font-size: 1.25rem;
+    opacity: 0.5;
+  }
+
+  &__title {
+    // margin-top: 4rem;
+    margin-bottom: 3.25rem;
+    line-height: 1.5em;
+    color: white;
+    font-family: $font;
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+
+  &__image {
+    width: 270px;
+  }
+
+  &__button {
+
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    &:hover {
+      transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      transition-duration: 0.5s;
+      transform: translate(35%);
+    }
+
+  }
+
+}
+
+
+.form {
+  
+  background-color: lightgray;
+
+  &__body {
+    color: red;
+  }
+
+  &__title {
+    color: white;
+    font-family: $font;
+    font-weight: 800;
+  }
+
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel App</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body class="landing-page">
+  <nav class="nav-bar">
+    <a href="" class="nav-bar__link logo">camping.</a>
+    <ul class="nav-bar__sandwich-container">
+      <li class="nav-bar__item">
+        <a href="" class="nav-bar__link nav-bar__link_margin">about</a>
+        <a href="" class="nav-bar__link">contact</a>
+      </li>
+      <li class="nav-bar__item">
+        <a href="" class="nav-bar__link nav-bar__link_margin">sign in</a>
+        <a href="" class="nav-bar__link">sign up</a>   
+      </li>
+    </ul>
+    <a href="" class="nav-bar__search-button"><img src="./static/images/search.png" alt="search button"></a>
+  </nav>
+
+  <section class="content">
+    <header class="header">
+      <h1 class="header__title">Beautiful Places<br/>of England</h1>
+      <p class="header__subtitle">Plan your vacation on the most beautiful<br/>places of England</p>
+    </header>
+    <aside class="offer">
+      <div class="offer__info">
+        <p class="offer__superscript">Up next</p>
+        <h2 class="offer__title">Aerial View<br/>of Rock<br/>Cliffs</h2>
+        <img src="./static/images/arrow.png" alt="learn more button">
+      </div>
+      <img src="./static/images/mountain.png" alt="a beatiful view onto green mountains with white bushy clouds over them" class="offer__image">
+    </aside>
+  </section>
+
+  <form action="" class="form">
+    <h2 class="form__title">Book your vacation</h2>
+    <div class="form__body">
+      <div class="form__fields">
+        <div class="form__section">
+          <img src="./static/images/home-icon.png" alt="house icon near the accommodation form field" class="form__icon">
+          <div class="form__field">
+            <label for="accommodation" class="form__label">Accommodation</label>
+            <select name="accomodation" id="accomodation">
+              <option value="6730 Luna Land North Rhiannonmouth">6730 Luna Land North Rhiannonmouth</option>
+              <option value="6731 Luna Land North Rhiannonmouth">6731 Luna Land North Rhiannonmouth</option>
+              <option value="6732 Luna Land North Rhiannonmouth">6732 Luna Land North Rhiannonmouth</option>
+            </select>
+          </div> 
+        </div>
+        <div class="form__section">
+           <img src="./static/images/calendar-icon.png" alt="caldendar icon near the calender form field" class="form__icon">
+           <div class="form__field">
+             <label for="check-in" class="form__label">Check-in</label>
+             <input type="date" id="check-in" name="checkIn">
+           </div>
+        </div>
+        <div class="form__section">
+          <div class="form__field">
+            <label for="check-out" class="form__label">Check-out</label>
+            <input type="date" id="check-out" name="checkOut">
+          </div>
+        </div>
+        <div class="form__section">
+          <img src="./static/images/user-icon.png" alt="user icon near the guests form field" class="form__icon">
+          <div class="form__field">
+            <label for="guests" class="form__label">Guests</label>
+            <select name="guests" id="guests">
+              <option value="4">4 adults</option>
+              <option value="3">3 adults</option>
+              <option value="2">2 adults</option>
+              <option value="1">1 adult</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="Search" class="form__submit-button">
+    </div>
+  </form>
+</body>
+</html>

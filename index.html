@@ -22,19 +22,23 @@
     <a href="" class="nav-bar__search-button"><img src="./static/images/search.png" alt="search button"></a>
   </nav>
 
-  <section class="content">
-    <header class="header">
-      <h1 class="header__title">Beautiful Places<br/>of England</h1>
-      <p class="header__subtitle">Plan your vacation on the most beautiful<br/>places of England</p>
-    </header>
-    <aside class="offer">
-      <div class="offer__info">
-        <p class="offer__superscript">Up next</p>
-        <h2 class="offer__title">Aerial View<br/>of Rock<br/>Cliffs</h2>
-        <img src="./static/images/arrow.png" alt="learn more button">
-      </div>
-      <img src="./static/images/mountain.png" alt="a beatiful view onto green mountains with white bushy clouds over them" class="offer__image">
-    </aside>
+  <section class="container">
+    <div class="container__upper-space"></div>
+    <div class="content">
+      <header class="header">
+        <h1 class="header__title">Beautiful Places<br/>of England</h1>
+        <p class="header__subtitle">Plan your vacation on the most beautiful<br/>places of England</p>
+      </header>
+      <aside class="offer">
+        <div class="offer__info">
+          <p class="offer__superscript">Up next</p>
+          <h2 class="offer__title">Aerial View<br/>of Rock<br/>Cliffs</h2>
+          <img src="./static/images/arrow.png" alt="learn more button">
+        </div>
+        <img src="./static/images/mountain.png" alt="a beatiful view onto green mountains with white bushy clouds over them" class="offer__image">
+      </aside>
+    </div>
+    <div class="container__lower-space"></div>
   </section>
 
   <form action="" class="form">
@@ -43,9 +47,9 @@
       <div class="form__fields">
         <div class="form__section">
           <img src="./static/images/home-icon.png" alt="house icon near the accommodation form field" class="form__icon">
-          <div class="form__field">
+          <div>
             <label for="accommodation" class="form__label">Accommodation</label>
-            <select name="accomodation" id="accomodation">
+            <select name="accomodation" id="accomodation" class="form__field">
               <option value="6730 Luna Land North Rhiannonmouth">6730 Luna Land North Rhiannonmouth</option>
               <option value="6731 Luna Land North Rhiannonmouth">6731 Luna Land North Rhiannonmouth</option>
               <option value="6732 Luna Land North Rhiannonmouth">6732 Luna Land North Rhiannonmouth</option>
@@ -54,22 +58,22 @@
         </div>
         <div class="form__section">
            <img src="./static/images/calendar-icon.png" alt="caldendar icon near the calender form field" class="form__icon">
-           <div class="form__field">
+           <div>
              <label for="check-in" class="form__label">Check-in</label>
-             <input type="date" id="check-in" name="checkIn">
+             <input type="date" id="check-in" name="checkIn" class="form__field">
            </div>
         </div>
         <div class="form__section">
-          <div class="form__field">
+          <div>
             <label for="check-out" class="form__label">Check-out</label>
-            <input type="date" id="check-out" name="checkOut">
+            <input type="date" id="check-out" name="checkOut" class="form__field">
           </div>
         </div>
         <div class="form__section">
           <img src="./static/images/user-icon.png" alt="user icon near the guests form field" class="form__icon">
-          <div class="form__field">
+          <div>
             <label for="guests" class="form__label">Guests</label>
-            <select name="guests" id="guests">
+            <select name="guests" id="guests" class="form__field">
               <option value="4">4 adults</option>
               <option value="3">3 adults</option>
               <option value="2">2 adults</option>

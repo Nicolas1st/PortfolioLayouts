@@ -545,6 +545,22 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 16px;
+  border: 1px solid rgba(231, 231, 242, 0.3);
+}
+
+.form__section_left {
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  width: 387px;
+}
+
+.form__section_right {
+  border-left: none;
+  border-radius: 0 10px 10px 0;
 }
 
 .form__field {
@@ -554,6 +570,12 @@ template {
   font-weight: 700;
   color: white;
   background-color: #4B5152;
+  border: none;
+  padding-left: 0;
+  margin-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form__fields {
@@ -583,9 +605,19 @@ template {
 }
 
 .form__label {
+  margin-bottom: 8px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #E7E7F2;
   opacity: .6;
+}
+
+.form__field-container {
+  position: relative;
+}
+
+.form input[type="date"]::-webkit-calendar-picker-indicator,
+.form input[type="date"]::-webkit-inner-spin-button {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

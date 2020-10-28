@@ -194,6 +194,29 @@
 
   &__section {
     display: flex;
+    align-items: center;
+    padding: 15px 16px;
+    border: 1px solid rgba(231,231,242, .3);
+    // position: relative;
+    // margin-left: -.5px;
+    // margin-right: -.5px;
+    // z-index: 1s;
+
+    &_left {
+      // border-top: 1px solid rgba(231,231,242, .3);
+      // border-left: 1px solid rgba(231,231,242, .3);
+      // border-bottom: 1px solid rgba(231,231,242, .3);
+      border-right: none;
+      border-radius: 10px 0 0 10px;
+      width: 387px;
+    }
+
+    
+
+    &_right {
+      border-left: none;
+      border-radius: 0 10px 10px 0;
+    }
   }
 
   &__field {
@@ -203,7 +226,13 @@
     font-weight: 700;
     color: white;
     background-color: #4B5152;
+    border: none;
+    padding-left: 0;
+    margin-left: 0;
+    display: flex;
+    // position: relative;
   }
+
 
   &__fields {
     display: flex;
@@ -228,10 +257,29 @@
   }
 
   &__label {
+    // position: absolute;
+    // top: 15px;
+    // display: block;
+    margin-bottom: 8px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #E7E7F2;
     opacity: .6;
   }
+
+  &__field-container {
+    position: relative;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="date"]::-webkit-inner-spin-button{
+      display: none;
+  }
+
+  // input[type=text]::-webkit-inner-spin-button {
+  //   // -webkit-appearance: none;
+  //   margin-bottom: 10px;
+  // }
+
 }
 

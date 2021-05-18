@@ -620,4 +620,11 @@ template {
 .form input[type="date"]::-webkit-inner-spin-button {
   display: none;
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
 /*# sourceMappingURL=style.css.map */
